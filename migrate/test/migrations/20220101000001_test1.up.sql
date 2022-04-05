@@ -1,0 +1,1 @@
+insert into "test1" ("field1", "field2") VALUES ('test', 123);

@@ -1,0 +1,1 @@
+delete from "test1" where "field1" = "test" and "field2" =  123;
