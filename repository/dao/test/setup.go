@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	db "github.com/sanches1984/gopkg-database"
+	db "github.com/sanches1984/gopkg-pg-orm"
 
 	"github.com/go-pg/pg/v9"
 )

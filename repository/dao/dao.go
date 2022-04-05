@@ -5,13 +5,13 @@ import (
 	"errors"
 	"fmt"
 	"github.com/rs/zerolog/log"
-	pkgerr "github.com/sanches1984/gopkg-database/errors"
+	pkgerr "github.com/sanches1984/gopkg-pg-orm/errors"
 	"reflect"
 	"strings"
 	"time"
 
-	db "github.com/sanches1984/gopkg-database"
-	"github.com/sanches1984/gopkg-database/repository/opt"
+	db "github.com/sanches1984/gopkg-pg-orm"
+	"github.com/sanches1984/gopkg-pg-orm/repository/opt"
 
 	"github.com/go-pg/pg/v9/orm"
 )

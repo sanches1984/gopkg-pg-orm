@@ -3,14 +3,14 @@ package dao
 import (
 	"context"
 	"errors"
-	"github.com/sanches1984/gopkg-database/repository/filter"
+	"github.com/sanches1984/gopkg-pg-orm/repository/filter"
 	"testing"
 	"time"
 
-	db "github.com/sanches1984/gopkg-database"
-	pkgerr "github.com/sanches1984/gopkg-database/errors"
-	"github.com/sanches1984/gopkg-database/repository/dao/test"
-	"github.com/sanches1984/gopkg-database/repository/opt"
+	db "github.com/sanches1984/gopkg-pg-orm"
+	pkgerr "github.com/sanches1984/gopkg-pg-orm/errors"
+	"github.com/sanches1984/gopkg-pg-orm/repository/dao/test"
+	"github.com/sanches1984/gopkg-pg-orm/repository/opt"
 
 	"github.com/go-pg/pg/v9"
 	"github.com/stretchr/testify/assert"

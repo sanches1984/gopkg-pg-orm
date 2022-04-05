@@ -3,11 +3,11 @@ package pager
 import (
 	"errors"
 	"fmt"
-	pkgerr "github.com/sanches1984/gopkg-database/errors"
+	pkgerr "github.com/sanches1984/gopkg-pg-orm/errors"
 	"math"
 
-	"github.com/sanches1984/gopkg-database/repository"
-	dbpager "github.com/sanches1984/gopkg-database/repository/pager"
+	"github.com/sanches1984/gopkg-pg-orm/repository"
+	dbpager "github.com/sanches1984/gopkg-pg-orm/repository/pager"
 )
 
 var LastPageTag = pkgerr.NewTag()

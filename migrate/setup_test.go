@@ -3,8 +3,8 @@ package migrate
 import (
 	"context"
 	"github.com/joho/godotenv"
-	db "github.com/sanches1984/gopkg-database"
-	"github.com/sanches1984/gopkg-database/migrate/test"
+	db "github.com/sanches1984/gopkg-pg-orm"
+	"github.com/sanches1984/gopkg-pg-orm/migrate/test"
 	"log"
 	"os"
 	"testing"

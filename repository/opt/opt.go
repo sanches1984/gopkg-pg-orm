@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/sanches1984/gopkg-database/pager"
-	"github.com/sanches1984/gopkg-database/repository"
-	"github.com/sanches1984/gopkg-database/repository/filter"
-	"github.com/sanches1984/gopkg-database/repository/order"
+	"github.com/sanches1984/gopkg-pg-orm/pager"
+	"github.com/sanches1984/gopkg-pg-orm/repository"
+	"github.com/sanches1984/gopkg-pg-orm/repository/filter"
+	"github.com/sanches1984/gopkg-pg-orm/repository/order"
 
 	"github.com/go-pg/pg/v9/orm"
 )

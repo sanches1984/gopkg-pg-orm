@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	db "github.com/sanches1984/gopkg-database"
-	"github.com/sanches1984/gopkg-database/repository/dao/test"
+	db "github.com/sanches1984/gopkg-pg-orm"
+	"github.com/sanches1984/gopkg-pg-orm/repository/dao/test"
 )
 
 var (

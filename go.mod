@@ -1,4 +1,4 @@
-module github.com/sanches1984/gopkg-database
+module github.com/sanches1984/gopkg-pg-orm
 
 go 1.15
 

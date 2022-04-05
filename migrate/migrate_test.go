@@ -1,8 +1,8 @@
 package migrate
 
 import (
-	db "github.com/sanches1984/gopkg-database"
-	"github.com/sanches1984/gopkg-database/migrate/test"
+	db "github.com/sanches1984/gopkg-pg-orm"
+	"github.com/sanches1984/gopkg-pg-orm/migrate/test"
 	"github.com/stretchr/testify/require"
 	"os"
 	"testing"

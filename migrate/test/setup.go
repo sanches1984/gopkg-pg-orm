@@ -3,7 +3,7 @@ package test
 import (
 	"context"
 	"github.com/go-pg/pg/v9"
-	db "github.com/sanches1984/gopkg-database"
+	db "github.com/sanches1984/gopkg-pg-orm"
 	"strings"
 	"testing"
 )
