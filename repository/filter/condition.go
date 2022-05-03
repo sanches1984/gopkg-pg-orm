@@ -24,7 +24,7 @@ type Condition interface {
 // Eq field name equal to value
 type Eq map[string]interface{}
 
-// Eq field name equal to value
+// EqLower field name equal to value
 type EqLower map[string]string
 
 // Between field name equal to value
@@ -84,7 +84,7 @@ type NotNull string
 // Or filter
 type Or []Condition
 
-// Or filter
+// And filter
 type And []Condition
 
 // Not filter

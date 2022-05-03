@@ -142,7 +142,7 @@ func (o *Opt) IsFilter() bool {
 	return len(o.Filter) > 0
 }
 
-// Add query function
+// Fn Add query function
 func Fn(queryFn ...repository.QueryApply) FnOpt {
 	return func(opt *Opt) {
 		opt.Fn = append(opt.Fn, queryFn...)
@@ -227,7 +227,7 @@ func Eq(column string, val interface{}) FnOpt {
 	}
 }
 
-// Eq adds to filter equal in lower case condition
+// EqLower adds to filter equal in lower case condition
 func EqLower(column, val string) FnOpt {
 	return func(opt *Opt) {
 		opt.Filter = append(opt.Filter, filter.EqLower{column: val})
@@ -309,6 +309,13 @@ func In(column string, vals interface{}) FnOpt {
 func Contains(column string, val string) FnOpt {
 	return func(opt *Opt) {
 		opt.Filter = append(opt.Filter, filter.Contains{column: val})
+	}
+}
+
+// Match builds a condition with match statement
+func Match(column string, expr string) FnOpt {
+	return func(opt *Opt) {
+		opt.Filter = append(opt.Filter, filter.Match{column: expr})
 	}
 }
 
