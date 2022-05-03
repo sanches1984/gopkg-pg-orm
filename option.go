@@ -9,7 +9,7 @@ import (
 type Option func(ctx context.Context) context.Context
 
 func WithLogger(logger zerolog.Logger, duration time.Duration) Option {
-	logger.Info().Msgf("db logger: log query over %v", duration)
+	logger.Info().Dur("over", duration).Msg("long db query logging enabled")
 	return func(ctx context.Context) context.Context {
 		dbLogger := newDBLogger(logger, duration)
 		dbc := FromContext(ctx)
