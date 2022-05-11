@@ -38,6 +38,7 @@ func (m *Migrator) Run() error {
 	db, err := sql.Open(driverName, m.dsn)
 	if err != nil {
 		m.logger.Error().Err(err).Msg("failed to connect database")
+		return err
 	}
 	defer db.Close()
 
